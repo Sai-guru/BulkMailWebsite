@@ -52,7 +52,7 @@ const Page = () => {
     }
 
     setStatus(true);
-    axios.post('http://localhost:5000/sendEmail', { msg, emailList })
+    axios.post('https://bulkmailwebsite-backend.onrender.com/sendEmail', { msg, emailList })
       .then(function (response) {
         if (response.data === true) {
           alert('Email sent successfully');
